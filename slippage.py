@@ -4,6 +4,7 @@ import pandas as pd
 import time
 import json
 
+bitmex = ccxt.bitmex()
 bithumb = ccxt.bithumb()
 okex = ccxt.okex()
 binance = ccxt.binance()
@@ -26,7 +27,7 @@ pairs = {
     'okex': ['BCH/USDT','BTC/USDT','BCH/BTC','ETH/USDT','EOS/USDT','LTC/BTC','ETH/BTC','EOS/BTC','LTC/USDT','ETC/USDT'],
 
     'binance': ['BCH/BTC','BCH/USDT','BTC/USDT','ETH/BTC','ETH/USDT','XRP/BTC','XRP/USDT','ADA/BTC','EOS/USDT','PAX/BTC'],
-    
+
     'huobi': ['BTC/USDT','BCH/USDT','ETH/USDT','EOS/USDT','BCH/BTC','EOS/BTC','EOS/ETH','XRP/USDT','ETH/BTC','LTC/USDT'],
 
     'bitforex': ['BTC/USDT','BCH/USDT','ETH/USDT','LTC/USDT','TRX/USDT','NEO/ETH','ETC/USDT','NEO/USDT','QTUM/ETH','QTUM/USDT'],
