@@ -43,7 +43,7 @@ pairs = {
 
 
 
-def orderbook_to_textfile(exchanges, exchange_names, top_pairs):
+def orderbook_to_textfile(exchanges, exchange_names,pairs):
     current_time = int(time.time() * 1000)
     exchanges_list = []
     for index,exchange in enumerate(exchanges):
@@ -64,7 +64,8 @@ def orderbook_to_textfile(exchanges, exchange_names, top_pairs):
 
 while True:
     try:
-        orderbook_to_textfile(exchanges, exchange_names, top_pairs)
+        print('getting orderbooks')
+        orderbook_to_textfile(exchanges, exchange_names, pairs)
     except:
-        pass
+        print('pass')
     time.sleep(60*60)
