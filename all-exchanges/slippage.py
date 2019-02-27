@@ -5,7 +5,7 @@ import time
 import json
 import threading
 
-exchange_names = ['binance', 'bithumb', 'bitmex', 'okex','zb','huobipro', 'bitforex', 'bitfinex','hitbtc2','bibox','lbank','gdax','kraken','bittrex','poloniex']
+exchange_names = ['binance', 'bitmex', 'okex','zb','huobipro', 'bitforex', 'bitfinex','hitbtc2','bibox','lbank','gdax','kraken','bittrex','poloniex']
 print(len(exchange_names))
 def load_pairs():
     print('loading pairs')

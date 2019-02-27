@@ -15,8 +15,11 @@ kraken = ccxt.kraken()
 gdax = ccxt.gdax()
 bitfinex = ccxt.bitfinex2()
 
-exchange_names = ['bithumb', 'bitmex','okex','binance', 'huobi', 'bitforex', 'bittrex', 'bitfinex', 'kraken', 'gdax']
-exchanges = [bithumb, bitmex, okex, binance, huobi, bitforex, bittrex, bitfinex, kraken, gdax]
+exchange_names = ['bithumb']
+exchanges = [bithumb]
+
+
+bithumb.load_markets()
 
 
 def load_pairs():
